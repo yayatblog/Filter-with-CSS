@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Belajar CSS</title>
+	<style>
+		body {
+			text-align: center;
+			background-color: lightblue;
+		}
+		/*Filter ada 10 yaitu :
+		blur(px)
+		brightness(angka|%)
+		contrast(angka|%)
+		saturate(angka|%)
+		grayscale(angka|%) merubah warna menjadi abu-abu
+		sepia(angka|%) merubah warna menjadi cokelat
+		hue-rotate(deg)
+		invert(angka|%) merubah menjadi warna negatif
+		opacity(angka|%)
+		drop-shadow(sama seperti Box Shadow) bisa digunakan untuk text dan gambar
+		*/
+		img {
+			/*filter:blur(10px);*/
+			/*filter:brightness(1.1);
+			filter: contrast(10%);*/
+			/*filter: saturate(20%);*/
+			/*filter: sepia(100%);*/
+			/*filter: invert(80%);*/
+			/*filter: drop-shadow(5px 5px 5px black);*/
+			filter: blur(5px) grayscale(1);
+			transition: 1s;
+		}
+		img:hover {
+			filter: blur(0) grayscale(0);
+		}
+	</style>
+</head>
+<body>
+	<h1>Filter</h1>
+
+
+
+
+
+<img src="img/jam.jpg" alt="Maulana Hidayat" >
+</body>
+</html>
